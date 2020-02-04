@@ -19,7 +19,7 @@ public class Rookie extends Contract {
 
 	@Override
 	public String toString() {
-		return "Rookie [draftrank=" + draftrank + ", toString()=" + super.toString() + "]";
+		return "Rookie [draftrank=" + draftrank + ", Contract=" + super.toString() + "]";
 	}
 	
 	

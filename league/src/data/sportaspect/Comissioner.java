@@ -3,6 +3,7 @@ package data.sportaspect;
 public class Comissioner extends Person {
 	
 	private String playername;
+	
 	public Comissioner(String firstname, String lastname, int age) {
 		super(firstname, lastname, age);
 		// TODO Auto-generated constructor stub
@@ -17,7 +18,7 @@ public class Comissioner extends Person {
 
 	@Override
 	public String toString() {
-		return "Comissioner [playername=" + playername + ", toString()=" + super.toString() + "]";
+		return "Comissioner [playername=" + playername + ", Comissioner=" + super.toString() + "]";
 	}
 	
 

@@ -36,7 +36,7 @@ public class Player extends Person {
 	}
 	@Override
 	public String toString() {
-		return "Player [number=" + number + ", contract=" + contract + ", stat=" + stat + ", toString()="
+		return "Player [number=" + number + ", contract=" + contract + ", stat=" + stat + ",player="
 				+ super.toString() + "]";
 	}
 	
