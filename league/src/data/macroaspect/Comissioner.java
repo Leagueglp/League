@@ -1,4 +1,6 @@
-package data.sportaspect;
+package data.macroaspect;
+
+import data.microaspect.Person;
 
 public class Comissioner extends Person {
 	

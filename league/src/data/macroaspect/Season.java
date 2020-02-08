@@ -1,30 +1,23 @@
-package data.sportaspect;
+package data.macroaspect;
 
 import java.util.HashMap;
 
+import data.microaspect.Franchise;
+
 public abstract class Season {
-	private HashMap<String, Match> matchs = new HashMap<String, Match>();
+
 	private HashMap<String, Franchise> franlist = new HashMap<String, Franchise>();
-	private HashMap<String, Event> events = new HashMap<String, Event>();
+	private Calendar calendar;
 	private Counter counter;
 	private String start;
 	private String end;
-	
-	public Season(HashMap<String, Match> matchs, HashMap<String, Franchise> franlist, HashMap<String, Event> events,
-			Counter counter, String start, String end) {
+	public Season(HashMap<String, Franchise> franlist, Calendar calendar, Counter counter, String start, String end) {
 		super();
-		this.matchs = matchs;
 		this.franlist = franlist;
-		this.events = events;
+		this.calendar = calendar;
 		this.counter = counter;
 		this.start = start;
 		this.end = end;
-	}
-	public HashMap<String, Match> getMatchs() {
-		return matchs;
-	}
-	public void setMatchs(HashMap<String, Match> matchs) {
-		this.matchs = matchs;
 	}
 	public HashMap<String, Franchise> getFranlist() {
 		return franlist;
@@ -32,11 +25,11 @@ public abstract class Season {
 	public void setFranlist(HashMap<String, Franchise> franlist) {
 		this.franlist = franlist;
 	}
-	public HashMap<String, Event> getEvents() {
-		return events;
+	public Calendar getCalendar() {
+		return calendar;
 	}
-	public void setEvents(HashMap<String, Event> events) {
-		this.events = events;
+	public void setCalendar(Calendar calendar) {
+		this.calendar = calendar;
 	}
 	public Counter getCounter() {
 		return counter;
@@ -58,8 +51,11 @@ public abstract class Season {
 	}
 	@Override
 	public String toString() {
-		return "Season [matchs=" + matchs + ", franlist=" + franlist + ", events=" + events + ", counter=" + counter
-				+ ", start=" + start + ", end=" + end + "]";
+		return "Season [franlist=" + franlist + ", calendar=" + calendar + ", counter=" + counter + ", start=" + start
+				+ ", end=" + end + "]";
 	}
+	
+	
+	
 	
 }

@@ -1,4 +1,4 @@
-package data.sportaspect;
+package data.microaspect;
 
 public abstract class Person {
 	private String firstname;

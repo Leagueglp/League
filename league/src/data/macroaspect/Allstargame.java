@@ -1,6 +1,6 @@
-package data.sportaspect;
+package data.macroaspect;
 
-public class Allstargame extends Earning {
+public class Allstargame extends Event {
 
 	private Match exmatch;
 	
@@ -19,7 +19,9 @@ public class Allstargame extends Earning {
 
 	@Override
 	public String toString() {
-		return "Allstargame [exmatch=" + exmatch + "]";
+		return "Allstargame [exmatch=" + exmatch + ", toString()=" + super.toString() + "]";
 	}
+
+
 
 }

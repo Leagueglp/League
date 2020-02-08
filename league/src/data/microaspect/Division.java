@@ -1,10 +1,10 @@
-package data.sportaspect;
+package data.microaspect;
 
-public abstract class Event {
+public class Division {
 
 	private String name;
-
-	public Event(String name) {
+	
+	public Division(String name) {
 		super();
 		this.name = name;
 	}
@@ -19,7 +19,6 @@ public abstract class Event {
 
 	@Override
 	public String toString() {
-		return "Event [name=" + name + "]";
+		return "Division [name=" + name + "]";
 	}
-	
 }

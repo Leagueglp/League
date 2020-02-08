@@ -1,11 +1,8 @@
-package data.sportaspect;
+package data.microaspect;
 
 public class Manager extends Person {
-	
-	
+		
 	private int stat;
-
-	
 
 	public Manager(String firstname, String lastname, int age) {
 		super(firstname, lastname, age);
@@ -26,7 +23,6 @@ public class Manager extends Person {
 	public void setStat(int stat) {
 		this.stat = stat;
 	}
-
 
 	@Override
 	public String toString() {

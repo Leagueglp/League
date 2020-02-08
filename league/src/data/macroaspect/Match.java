@@ -1,4 +1,4 @@
-package data.sportaspect;
+package data.macroaspect;
 
 
 public class Match {
@@ -7,13 +7,16 @@ public class Match {
 	private String franchise1;
 	private String franchise2;
 	private String location;
-	
-	public Match(String date, String franchise1, String franchise2, String location) {
+	private int score1 ;
+	private int score2 ;
+	public Match(String date, String franchise1, String franchise2, String location, int score1, int score2) {
 		super();
 		this.date = date;
 		this.franchise1 = franchise1;
 		this.franchise2 = franchise2;
 		this.location = location;
+		this.score1 = score1;
+		this.score2 = score2;
 	}
 	public String getDate() {
 		return date;
@@ -39,12 +42,24 @@ public class Match {
 	public void setLocation(String location) {
 		this.location = location;
 	}
-
+	public int getScore1() {
+		return score1;
+	}
+	public void setScore1(int score1) {
+		this.score1 = score1;
+	}
+	public int getScore2() {
+		return score2;
+	}
+	public void setScore2(int score2) {
+		this.score2 = score2;
+	}
 	@Override
 	public String toString() {
 		return "Match [date=" + date + ", franchise1=" + franchise1 + ", franchise2=" + franchise2 + ", location="
-				+ location + ", getDate()=" + getDate() + ", getFranchise1()=" + getFranchise1() + ", getFranchise2()="
-				+ getFranchise2() + ", getLocation()=" + getLocation() + ", getClass()=" + getClass() + ", hashCode()="
-				+ hashCode() + "]";
+				+ location + ", score1=" + score1 + ", score2=" + score2 + "]";
 	}
+	
+	
+
 }

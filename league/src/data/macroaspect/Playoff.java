@@ -1,6 +1,8 @@
-package data.sportaspect;
+package data.macroaspect;
 
 import java.util.HashMap;
+
+import data.microaspect.Franchise;
 
 public class Playoff {
 	private HashMap<String, Franchise> qualifiedteam = new HashMap<String, Franchise>();
