@@ -1,25 +1,23 @@
 package data.microaspect;
 
-import data.macroaspect.Draft;
-
 public class Rookie extends Contract {
 	
 
-	private Draft draftrank;
+	private int draftrank;
 
 
-	public Rookie(String date, double salary, int duration, Draft draftrank) {
+	public Rookie(String date, double salary, int duration, int draftrank) {
 		super(date, salary, duration);
 		this.draftrank = draftrank;
 	}
 
 
-	public Draft getDraftrank() {
+	public int getDraftrank() {
 		return draftrank;
 	}
 
 
-	public void setDraftrank(Draft draftrank) {
+	public void setDraftrank(int draftrank) {
 		this.draftrank = draftrank;
 	}
 
