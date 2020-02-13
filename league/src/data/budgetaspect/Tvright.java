@@ -1,8 +1,11 @@
 package data.budgetaspect;
 
-public class Tvright {
+import java.util.ArrayList;
+
+public class Tvright implements Budget {
 	
-	private static double tvright;
+	
+	private static double tvright = 270000000;
 	
 	
 
@@ -10,9 +13,20 @@ public class Tvright {
 		return tvright;
 	}
 
-	public static void setTvright(double tvright) {
-		Tvright.tvright = tvright;
+
+
+	@Override
+	public void setIncome(ArrayList<Double> income) {
+		income.add(tvright);		
 	}
+
+
+	@Override
+	public void setCost(ArrayList<Double> cost) {
+		return;
+		
+	}
+	
 	
 	
 	

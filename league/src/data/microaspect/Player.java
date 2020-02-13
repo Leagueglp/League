@@ -1,5 +1,7 @@
 package data.microaspect;
 
+
+
 public class Player extends Person {
 	
 
@@ -13,6 +15,27 @@ public class Player extends Person {
 		this.number = number;
 		this.contract = contract;
 		this.stat = stat;
+	}
+
+	
+	@Override
+	public String getFirstname() {
+		// TODO Auto-generated method stub
+		return super.getFirstname();
+	}
+
+
+	@Override
+	public String getLastname() {
+		// TODO Auto-generated method stub
+		return super.getLastname();
+	}
+
+
+	@Override
+	public int getAge() {
+		// TODO Auto-generated method stub
+		return super.getAge();
 	}
 
 
@@ -36,8 +59,7 @@ public class Player extends Person {
 	}
 	@Override
 	public String toString() {
-		return "Player [number=" + number + ", contract=" + contract + ", stat=" + stat + ",player="
-				+ super.toString() + "]";
+		return "Player"+ super.toString() + "[number=" + number + ", contract=" + contract + ", stat=" + stat + "]";
 	}
 	
 	

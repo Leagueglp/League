@@ -2,7 +2,7 @@ package data.budgetaspect;
 
 import java.util.ArrayList;
 
-public abstract class Leaguebudget {
+public class Leaguebudget implements Budget {
 	
 	private double money;
 	private ArrayList<Double> income = new ArrayList<Double>(); 
@@ -22,13 +22,13 @@ public abstract class Leaguebudget {
 		this.money = money;
 	}
 	public ArrayList<Double> getIncome() {
-		return income;
+		return new ArrayList<Double>();
 	}
 	public void setIncome(ArrayList<Double> income) {
 		this.income = income;
 	}
 	public ArrayList<Double> getCost() {
-		return cost;
+		return new ArrayList<Double>();
 	}
 	public void setCost(ArrayList<Double> cost) {
 		this.cost = cost;

@@ -1,21 +1,21 @@
 package data.microaspect;
 
 public class Team {
-	private Player player;
+	private Player players;
 	private double generalstat;
 
 	public Team(Player player, double generalstat) {
 		super();
-		this.player = player;
+		this.players = player;
 		this.generalstat = generalstat;
 	}
 
 	public Player getPlayer() {
-		return player;
+		return players;
 	}
 
 	public void setPlayer(Player player) {
-		this.player = player;
+		this.players = player;
 	}
 
 	public double getGeneralstat() {
@@ -28,6 +28,6 @@ public class Team {
 
 	@Override
 	public String toString() {
-		return "Team [player=" + player + ", generalstat=" + generalstat + "]";
+		return "Team [player=" + players + ", generalstat=" + generalstat + "]";
 	}
 }
