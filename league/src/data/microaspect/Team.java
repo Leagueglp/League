@@ -1,20 +1,22 @@
 package data.microaspect;
 
-public class Team {
-	private Player players;
+import java.util.ArrayList;
+
+public abstract class Team  {
+	private ArrayList<Player> players;
 	private double generalstat;
 
-	public Team(Player player, double generalstat) {
+	public Team(ArrayList<Player> player, double generalstat) {
 		super();
 		this.players = player;
 		this.generalstat = generalstat;
 	}
 
-	public Player getPlayer() {
-		return players;
+	public ArrayList<Player> getPlayer() {
+		return new ArrayList<Player>();
 	}
 
-	public void setPlayer(Player player) {
+	public void setPlayer(ArrayList<Player> player) {
 		this.players = player;
 	}
 
@@ -26,8 +28,4 @@ public class Team {
 		this.generalstat = generalstat;
 	}
 
-	@Override
-	public String toString() {
-		return "Team [player=" + players + ", generalstat=" + generalstat + "]";
-	}
 }

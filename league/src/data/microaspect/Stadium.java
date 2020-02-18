@@ -1,20 +1,25 @@
 package data.microaspect;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Stadium {
 	
- private static ArrayList<String> stadium = new ArrayList<String> ();
- 
-
- public ArrayList<String> getstadium() {
-	return stadium;
- }
-
- public void setstadium(ArrayList<String> stadium) {
-	stadium = Stadium.stadium;
- }
- 
- 
+	private int seat;
+	private HashMap<String, Double> seatprice;
+	public int getSeat() {
+		return seat;
+	}
+	public void setSeat(int seat) {
+		this.seat = seat;
+	}
+	public HashMap<String, Double> getSeatprice() {
+		return new HashMap<String, Double>(seat);
+	}
+	public void setSeatprice(HashMap<String, Double> seatprice) {
+		this.seatprice = seatprice;
+	}
+	
+	
 
 }
