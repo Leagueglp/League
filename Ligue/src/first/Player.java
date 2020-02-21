@@ -2,18 +2,28 @@ package first;
 
 public class Player {
 	
+	private int id =0;
 	private String name;
-	private int age;
-	private int rating;
+	private Integer age;
+	private Integer rating;
 	
 	public Player () {
 		
 	}
 	
-	public Player (String name, int age, int rating) {
+	public Player (int id, String name, int age, int rating) {
+		this.id = id;
 		this.name = name;
 		this.age = age;
 		this.rating = rating;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
 	}
 
 	public String getName() {
@@ -24,7 +34,7 @@ public class Player {
 		this.name = name;
 	}
 
-	public int getAge() {
+	public Integer getAge() {
 		return age;
 	}
 
@@ -32,7 +42,7 @@ public class Player {
 		this.age = age;
 	}
 
-	public int getRating() {
+	public Integer getRating() {
 		return rating;
 	}
 

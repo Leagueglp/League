@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 public class BasketTeam {
 	
+	private int id =0;
 	private String teamName;
 	private String location;
 	private Stadium stadium;
@@ -24,6 +25,14 @@ public class BasketTeam {
 		this.stat = stat;
 	}
 	
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
 
 	public Rank getRank() {
 		return rank;
