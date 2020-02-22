@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class BasketTeam {
 	
-	private int id =0;
+	private Integer id =0;
 	private String teamName;
 	private String location;
 	private Stadium stadium;
@@ -16,13 +16,10 @@ public class BasketTeam {
 		
 	}
 	
-	public BasketTeam (String teamName, String location, 
-				Stadium stadium,Rank rank, double stat) {
+	public BasketTeam (Integer id,String teamName, String location) {
+		this.id = id;
 		this.teamName = teamName;
 		this.location = location;
-		this.stadium = stadium;
-		this.rank = rank;
-		this.stat = stat;
 	}
 	
 
@@ -83,11 +80,11 @@ public class BasketTeam {
 	}
 
 	public void add(Player player) {
-		players.add(player);
+		this.players.add(player);
 	}
 	
 	public void remove(Player player) {
-		players.remove(player);
+		this.players.remove(player);
 	}
 	
 	public void calculateStat() {

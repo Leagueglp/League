@@ -1,6 +1,7 @@
 package dao;
-import java.sql.*;
-import com.mysql.*;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
 import com.mysql.jdbc.Connection;
 
 import first.Player;
@@ -37,12 +38,12 @@ public class PlayerDao extends DAO<Player> {
 		    try {
 		      ResultSet result = this.connect.createStatement(
 		        ResultSet.TYPE_SCROLL_INSENSITIVE,
-		        ResultSet.CONCUR_READ_ONLY).executeQuery("SELECT * FROM Player WHERE ply_id = " + id);
+		        ResultSet.CONCUR_READ_ONLY).executeQuery("SELECT * FROM data_player WHERE ply_id = " + id);
 		      if(result.first())
 		        player = new Player(id,
-		        		result.getString("ply_name"), 
-		        		result.getInt("ply_age"),
-		        		result.getInt("ply_rating"));       
+		        		result.getString("Player_Name"), 
+		        		result.getInt("Player_Age"),
+		        		result.getInt("Player_Rating"));       
 		    } catch (SQLException e) {
 		      e.printStackTrace();
 		    }

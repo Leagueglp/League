@@ -1,4 +1,4 @@
-package second;
+package test;
 
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -8,7 +8,7 @@ import com.mysql.jdbc.ResultSetMetaData;
 import com.mysql.jdbc.Statement;
 
 
-public class Connect {
+public class Testconnect {
 	  public static void main(String[] args) {      
 	    try {
 	      Class.forName("com.mysql.jdbc.Driver");
@@ -23,7 +23,7 @@ public class Connect {
 	      //Création d'un objet Statement
 	      Statement state = (Statement) conn.createStatement();
 	      //L'objet ResultSet contient le résultat de la requête SQL
-	      ResultSet result = state.executeQuery("SELECT * FROM Player");
+	      ResultSet result = state.executeQuery("SELECT * FROM mydatabase.data_team;");
 	      //On récupère les MetaData
 	      ResultSetMetaData resultMeta = (ResultSetMetaData) result.getMetaData();
 	         
